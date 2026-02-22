@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 
-print("Hello, World!")
+number = input("Enter the number you want to power: ")
+power = input("Enter the power you want to raise the number to: ")
 
-print("hello ladies and gentlemen, I'm here to change the world")
+print(int(number) ** int(power))

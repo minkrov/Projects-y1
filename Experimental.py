@@ -1,19 +1,8 @@
 #!/usr/bin/env python3
 
-number = input("Enter the number you want to power: ")
-power = input("Enter the power you want to raise the number to: ")
-
-print(int(number) ** int(power))
-
-# 2D Lists and Nested Loops
-
-number_grid = [
-	[1, 2, 3],
-	[4, 5, 6],
-	[7, 8, 9,]
-]
-
-for row in number_grid:
-	for col in row:
-		print(col)
+try:
+	number = int(input("What's your number: "))
+	print(number)
+except ValueError:
+	print("It's not a number, sorry")
 	

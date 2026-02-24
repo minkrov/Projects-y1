@@ -13,5 +13,7 @@ number_grid = [
 	[7, 8, 9,]
 ]
 
-# print(number_grid[row][column])
-print(number_grid[0][2])
+for row in number_grid:
+	for col in row:
+		print(col)
+	

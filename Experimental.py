@@ -1,3 +1,7 @@
 #!/usr/bin/env python3
 
-open("README.md", "r")
+Test_open_close = open("Test open close", "a")
+
+Test_open_close.write("Chikibamboni")
+
+

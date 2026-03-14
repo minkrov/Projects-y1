@@ -8,7 +8,7 @@ class quiz_structure:
 
 question1 = quiz_structure("What is a soda company that starts with P?", ["a) Pepsi", "b) Coca Cola", "c) Popsicle", "d) Paradisaster"], "a")
 question2 = quiz_structure("What is a soda company that starts with C?", ["a) Pepsi", "b) Fanta", "c) 7up", "d) Coca Cola"],"d")
-question3 = quiz_structure("What is a soda compant that starts with F?", ["a) Coca Cola", "b) Fanta", "c) Pepsi", "d) 7up"], "b")
+question3 = quiz_structure("What is a soda company that starts with F?", ["a) Coca Cola", "b) Fanta", "c) Pepsi", "d) 7up"], "b")
 
 score = 0
 

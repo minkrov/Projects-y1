@@ -8,7 +8,6 @@ class questions_answers:
         self.answer = answer
 
 question1 = questions_answers("What is the capital of France", ["a) Bordeaux", "b) Paris"], "b")
-print(question1.question)
 
 question2 = questions_answers("What is the capital of Germany?", ["a) Berlin", "b) Bonn"], "a")
 

@@ -19,22 +19,16 @@ print("We have ", len(quiz), " questions in this quiz")
 while True:
     try:
         question_count = int(input("How many questions would you like?: "))
-        break
     except ValueError:
         print("That isn't a number!")
-
-while question_count > len(quiz) or question_count < 1:
+        continue
     if question_count > len(quiz):
-        print("That's too many questions!")
+            print("That's too many questions!")
     elif question_count < 1:
-        print("That's too little questions!")
+            print("That's too little questions!")
     else:
-        print("Game starting!")
-        break
-    try:
-        question_count = int(input("How many questions would you like?: "))
-    except ValueError:
-        print("That isn't a number!")
+            print("Game starting!")
+            break
 
 random.shuffle(quiz)
 
@@ -50,4 +44,4 @@ for question in quiz[0:question_count]:
         print("Incorrect")
         print("The answer was ", question.answer)
 
-print("You got ", str(score), " out of ", str((question_count)))
+print("You got ", str(score), " out of ", str(question_count))

@@ -18,8 +18,7 @@ def word_guess(attempts = 3):
             print("You guessed the word!")
             return
         else:
-            print("You didn't guess the word!")
-            print("Try again!")
+            print("Wrong word!")
             word_guess(attempts - 1)
 
 word_guess()

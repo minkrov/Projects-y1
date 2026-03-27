@@ -1,4 +1,4 @@
-word = "Hangman"
+word = input("What word would you like to guess?: ")
 lives = 10
 
 underline = "_" * len(word)
@@ -11,9 +11,9 @@ while new_underline != word:
     user_guess = input("Guess a letter: ")
     if user_guess.lower() in word.lower():
         for index, letter in enumerate(word):
-            if user_guess == letter:
+            if user_guess.lower() == letter.lower():
                 letters = list(underline)
-                letters[index] = user_guess
+                letters[index] = word[index]
                 new_underline = "".join(letters)
                 underline = new_underline
         print(new_underline)
@@ -27,3 +27,5 @@ while new_underline != word:
             print("You ran out of lives")
             print("Game Over")
             break
+
+print("Congratulations! You finished the game!")
